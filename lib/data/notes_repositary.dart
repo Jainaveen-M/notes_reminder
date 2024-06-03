@@ -32,6 +32,13 @@ class NotesRepositary {
     }
   }
 
+  void updateVisited(int id) {
+    int index = _notes.indexWhere((item) => item.id == id);
+    if (index != -1) {
+      _notes[index].isVisited = true;
+    }
+  }
+
   void addNotes(Note note) {
     _notes.add(note);
   }

@@ -73,17 +73,11 @@ class NotesBloc extends Bloc<NotesEvent, NotesState> {
 
   FutureOr<void> _updateVisited(MarkAsVisited event, Emitter<NotesState> emit) {
     try {
-      List<Note> notes = [];
-      List<Note> exisitingNotes = serviceLocator<NotesRepositary>().getNotes();
-      for (Note note in exisitingNotes) {
-        if (note.id == event.id && note.isOverDue) {
-          note.isVisited = true;
-        }
-        notes.add(note);
-      }
-      emit(NotesLoaded(notes: notes));
+      serviceLocator<NotesRepositary>().updateVisited(event.id);
+      emit(NotesLoaded(notes: serviceLocator<NotesRepositary>().getNotes()));
       emit(NavigateToHome());
     } catch (e) {
+      log(e.toString());
       emit(ShowErrorMessage(message: "Unbale to update visited status"));
     }
   }

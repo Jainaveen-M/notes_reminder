@@ -75,9 +75,8 @@ class _AddNotesState extends State<AddNotes> {
                       AddNotesEvent(
                         newNote: Note(
                           id: serviceLocator<NotesRepositary>()
-                                  .getTimeOption()
-                                  .length -
-                              1,
+                              .getTimeOption()
+                              .length,
                           content: contentController.text,
                           title: titleController.text,
                           createAt: formattedTime,
