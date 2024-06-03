@@ -74,9 +74,7 @@ class _AddNotesState extends State<AddNotes> {
                     BlocProvider.of<NotesBloc>(context).add(
                       AddNotesEvent(
                         newNote: Note(
-                          id: serviceLocator<NotesRepositary>()
-                              .getTimeOption()
-                              .length,
+                          id: serviceLocator<NotesRepositary>().getRandomId(),
                           content: contentController.text,
                           title: titleController.text,
                           createAt: formattedTime,

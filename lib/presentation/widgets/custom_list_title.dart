@@ -53,6 +53,12 @@ class CustomListTile extends StatelessWidget {
                           color: Colors.white,
                         ),
                       ),
+                      Text(
+                        note.id.toString(),
+                        style: const TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
                     ],
                   ),
                   Column(

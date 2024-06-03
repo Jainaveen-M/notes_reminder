@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:maersk/bloc/bloc/notes_bloc.dart';
@@ -69,6 +71,7 @@ class _NoteScreenState extends State<NoteScreen> {
                         itemCount: state.notes.length,
                         itemBuilder: (context, index) {
                           Note note = state.notes[index];
+                          log(note.id.toString());
                           return CustomListTile(note: note);
                         },
                       ),

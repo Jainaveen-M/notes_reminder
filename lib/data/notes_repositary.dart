@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:maersk/model/note.dart';
 
 class NotesRepositary {
@@ -41,5 +43,10 @@ class NotesRepositary {
 
   void addNotes(Note note) {
     _notes.add(note);
+  }
+
+  int getRandomId() {
+    Random randomRange = Random();
+    return 100 + randomRange.nextInt(1000 - 100 + 1);
   }
 }
