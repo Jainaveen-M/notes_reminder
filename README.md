@@ -9,16 +9,12 @@ Screenshots
 <img height="600" src="https://github.com/Jainaveen-M/notes_reminder/blob/main/screenshots/notes.png"/>
 
 
-3. Visited tile
-<img height="600" src="https://github.com/Jainaveen-M/notes_reminder/blob/main/screenshots/visited.png"/>
-
-
-4. Edit Note
+3. Edit Note
 <img height="600" src="https://github.com/Jainaveen-M/notes_reminder/blob/main/screenshots/editnotes.png"/>
 
-5. Add Note
+4. Add Note
 <img height="600" src="https://github.com/Jainaveen-M/notes_reminder/blob/main/screenshots/addnotes.png"/>
 
 
-6. Notes 
+5. Notes 
 <img height="600" src="https://github.com/Jainaveen-M/notes_reminder/blob/main/screenshots/notes2.png"/>
