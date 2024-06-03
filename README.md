@@ -2,7 +2,7 @@ Screenshots
 
 
 1. All Notes
-<img height="600" src="https://github.com/Jainaveen-M/notes_reminder/blob/main/screenshots/image.png"/>
+<img height="600" src="https://github.com/Jainaveen-M/notes_reminder/blob/main/screenshots/image1.png"/>
 
 
 2. Notes 
