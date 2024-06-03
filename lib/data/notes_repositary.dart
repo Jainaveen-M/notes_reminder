@@ -46,7 +46,7 @@ class NotesRepositary {
   }
 
   int getRandomId() {
-    Random randomRange = Random();
-    return 100 + randomRange.nextInt(1000 - 100 + 1);
+    DateTime eventTime = DateTime.now();
+    return eventTime.millisecondsSinceEpoch;
   }
 }
